@@ -3,6 +3,7 @@ import carpetCostCalculator.Carpet;
 import carpetCostCalculator.Floor;
 import cylinder.Circle;
 import cylinder.Cylinder;
+import person.Person;
 import point.Point;
 import poolArea.Cuboid;
 import poolArea.Rectangle;
@@ -70,6 +71,28 @@ public class Main {
         System.out.println("width= " + wall.getWidth());
         System.out.println("height= " + wall.getHeight());
         System.out.println("area= " + wall.getArea());
+
+        System.out.println("*****************************************************************");
+
+        //Person test Code
+
+        Person person = new Person();
+        person.setFirstName("");   // firstName is set to empty string
+        person.setLastName("");    // lastName is set to empty string
+        person.setAge(10);
+        System.out.println("fullName= " + person.getFullName());
+        System.out.println("teen= " + person.isTeen());
+        person.setFirstName("John");    // firstName is set to John
+        person.setAge(18);
+        System.out.println("fullName= " + person.getFullName());
+        System.out.println("teen= " + person.isTeen());
+        person.setLastName("Smith");    // lastName is set to Smith
+        System.out.println("fullName= " + person.getFullName());
+
+
+        System.out.println("*****************************************************************");
+
+
 
 
     }
