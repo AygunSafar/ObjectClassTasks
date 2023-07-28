@@ -6,6 +6,7 @@ import cylinder.Cylinder;
 import point.Point;
 import poolArea.Cuboid;
 import poolArea.Rectangle;
+import wallArea.Wall;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Main {
         System.out.println("rectangle.width= " + rectangle.getWidth());
         System.out.println("rectangle.length= " + rectangle.getLength());
         System.out.println("rectangle.area= " + rectangle.getArea());
-        Cuboid cuboid = new Cuboid(5,10,5);
+        Cuboid cuboid = new Cuboid(5, 10, 5);
         System.out.println("cuboid.width= " + cuboid.getWidth());
         System.out.println("cuboid.length= " + cuboid.getLength());
         System.out.println("cuboid.area= " + cuboid.getArea());
@@ -50,6 +51,7 @@ public class Main {
 
         System.out.println("*****************************************************************");
 
+        //Point Test Code
         Point first = new Point(6, 5);
         Point second = new Point(3, 1);
         System.out.println("distance(0,0)= " + first.distance());
@@ -59,6 +61,15 @@ public class Main {
         System.out.println("distance()= " + point.distance());
 
 
+        System.out.println("*****************************************************************");
+
+//      Wall Test Code
+        Wall wall = new Wall(5, 4);
+        System.out.println("area= " + wall.getArea());
+        wall.setHeight(-1.5);
+        System.out.println("width= " + wall.getWidth());
+        System.out.println("height= " + wall.getHeight());
+        System.out.println("area= " + wall.getArea());
 
 
     }
