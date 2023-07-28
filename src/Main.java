@@ -1,12 +1,12 @@
+import cylinder.Circle;
+import cylinder.Cylinder;
 import poolArea.Cuboid;
 import poolArea.Rectangle;
 
 public class Main {
     public static void main(String[] args) {
 
-
-        //Pool Area
-
+        //Pool Area Test Code
         Rectangle rectangle = new Rectangle(5, 10);
         System.out.println("rectangle.width= " + rectangle.getWidth());
         System.out.println("rectangle.length= " + rectangle.getLength());
@@ -17,6 +17,19 @@ public class Main {
         System.out.println("cuboid.area= " + cuboid.getArea());
         System.out.println("cuboid.height= " + cuboid.getHeight());
         System.out.println("cuboid.volume= " + cuboid.getVolume());
+
+        System.out.println("*****************************************************************");
+
+        //Cylinder Test Code
+
+        Circle circle = new Circle(3.75);
+        System.out.println("circle.radius= " + circle.getRadius());
+        System.out.println("circle.area= " + circle.getArea());
+        Cylinder cylinder = new Cylinder(5.55, 7.25);
+        System.out.println("cylinder.radius= " + cylinder.getRadius());
+        System.out.println("cylinder.height= " + cylinder.getHeight());
+        System.out.println("cylinder.area= " + cylinder.getArea());
+        System.out.println("cylinder.volume= " + cylinder.getVolume());
 
     }
 }
