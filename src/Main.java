@@ -7,6 +7,7 @@ import person.Person;
 import point.Point;
 import poolArea.Cuboid;
 import poolArea.Rectangle;
+import sumCalculator.SimpleCalculator;
 import wallArea.Wall;
 
 public class Main {
@@ -92,8 +93,17 @@ public class Main {
 
         System.out.println("*****************************************************************");
 
+        // Calculator Test Code
 
-
+        SimpleCalculator calculator1 = new SimpleCalculator();
+        calculator1.setFirstNumber(5.0);
+        calculator1.setSecondNumber(4);
+        System.out.println("add= " + calculator1.getAdditionResult());
+        System.out.println("subtract= " + calculator1.getSubtractionResult());
+        calculator1.setFirstNumber(5.25);
+        calculator1.setSecondNumber(0);
+        System.out.println("multiply= " + calculator1.getMultiplicationResult());
+        System.out.println("divide= " + calculator1.getDivisionResult());
 
     }
 }
